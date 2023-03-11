@@ -1,3 +1,11 @@
+"""
+USAGE - The code sets up a server that listens on a specified IP address and port number for 
+        incoming client connections. It creates a thread for each connected client that 
+        continuously listens for messages from the client and broadcasts them to all other 
+        connected clients. When a client disconnects, it is removed from the set of connected 
+        client sockets. The code also ensures that the server socket and all client sockets are 
+        properly closed when the program ends.
+"""
 import socket
 from threading import Thread
 
