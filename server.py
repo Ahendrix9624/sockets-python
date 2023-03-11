@@ -1,3 +1,15 @@
+"""
+USAGE - The code creates a server that listens on a specific IP address and port. 
+        It uses sockets and threading modules to handle incoming connections from clients. 
+        The server binds to the IP address and port, and starts listening for incoming connections. 
+        When a client connects, it creates a new thread to handle the client's connection. 
+        The handle_client() function receives messages from the client, prints the message along with the 
+        client's address, and sends a confirmation message back to the client. If the client sends 
+        the DISCONNECT_MESSAGE, the connection is closed. The start() function listens for incoming 
+        connections and starts a new thread for each incoming connection.
+
+AUTHOR - https://github.com/Ahendrix9624/
+"""
 import socket
 import threading
 
