@@ -1,3 +1,12 @@
+"""
+USAGE - This code creates a TCP client that connects to a server using a socket. 
+        The client prompts the user to enter their name and then creates a new thread 
+        to listen for incoming messages from the server. The client also allows the user 
+        to enter messages to send to the server. Messages are prepended with the current 
+        date, client name, and a color chosen randomly from a set of available colors. 
+        The message is then sent to the server using a socket connection. The program can 
+        be terminated by typing 'q'.
+"""
 import socket
 import random
 from threading import Thread
